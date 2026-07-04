@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>testing</title>
+  </head>
+  <body>
+    <script>
+      let run = true;
+
+      while (run) {
+        const getUserName = prompt("Enter cpanel username: ");
+
+        if (getUserName != "ctdobrme") {
+          alert("اشتباهه");
+          continue;
+        }
+
+        switch (getUserName) {
+          case "ctdobrme":
+            const getPswrd = prompt("Enter cpanel password: ");
+            if (getPswrd != "designbyte.ir") {
+              alert("اشتباهه");
+              continue;
+            }
+            switch (getPswrd) {
+              case "designbyte.ir":
+                const getHOw = prompt("استاد قول میدی دیگه نگی گلابی؟");
+                if (getHOw != "yes") {
+                  alert("🫥😫");
+                  continue;
+                }
+                switch (getHOw) {
+                  case "yes":
+                    const getSubmit = prompt("مطمئن ?");
+                    if (getSubmit != "yes") {
+                      alert("＞﹏＜");
+                      continue;
+                    }
+                    switch(getSubmit){
+                      case "yes" : 
+                        alert("ممنونممممممممم");
+                        window.open("./follow.html");
+                        run = false;
+                      }
+                }
+            }
+        }
+      }
+    </script>
+  </body>
+</html>
